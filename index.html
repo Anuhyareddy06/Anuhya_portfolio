@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Godi Anuhya Reddy – Aspiring Data Analyst & Full Stack Developer. Explore my projects, skills, internships, and certifications." />
+  <title>Godi Anuhya Reddy | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ── CURSOR GLOW ── -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ── PARTICLE CANVAS ── -->
+  <canvas id="particles"></canvas>
+
+  <!-- ════════════════ NAV ════════════════ -->
+  <nav id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-initial">A</span>nuhya
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ════════════════ HERO ════════════════ -->
+  <section id="hero">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-grid-overlay"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="badge-dot"></span> Open to Opportunities
+      </div>
+
+      <h1 class="hero-name reveal-up">
+        Godi <span class="gradient-text">Anuhya Reddy</span>
+      </h1>
+
+      <div class="hero-titles reveal-up">
+        <span class="static-text">I am a&nbsp;</span>
+        <span class="dynamic-text" id="dynamicText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+
+      <p class="hero-tagline reveal-up">
+        Detail-oriented technologist passionate about transforming data into decisions &amp; building experiences that
+        scale.
+      </p>
+
+      <div class="hero-actions reveal-up">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+      </div>
+
+      <div class="hero-stats reveal-up">
+        <div class="stat-item">
+          <span class="stat-number" data-target="8.26">0</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Internships</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="99">0</span><span class="stat-plus">%</span>
+          <span class="stat-label">School Score</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-right">
+      <div class="avatar-ring-outer">
+        <div class="avatar-ring-inner">
+          <img src="avatar.png" alt="Anuhya Reddy – Profile" class="avatar-img" />
+        </div>
+      </div>
+      <!-- floating skill chips -->
+      <div class="float-chip chip1"><span>🐍</span> Python</div>
+      <div class="float-chip chip2"><span>📊</span> Power BI</div>
+      <div class="float-chip chip3"><span>🗄️</span> SQL</div>
+      <div class="float-chip chip4"><span>📈</span> Tableau</div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <div class="scroll-wheel"></div>
+    </a>
+  </section>
+
+  <!-- ════════════════ ABOUT ════════════════ -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / About Me</span>
+        <h2 class="section-title">Who I Am</h2>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal-left">
+          <p class="about-intro">
+            I'm <strong>Anuhya Reddy</strong>, a final-year <strong>B.Tech Electrical &amp; Electronics</strong> student
+            at Pace Institute of Technology and Sciences, Ongole, India.
+          </p>
+          <p>
+            My curiosity drives me across disciplines — from analyzing thousands of data points with Python &amp; SQL to
+            crafting full-stack web experiences. I thrive where <em>technology meets strategy</em> and love uncovering
+            the stories hidden inside data.
+          </p>
+          <p>
+            Beyond code, I coordinate the <strong>Lingua Franca English Club</strong>, channeling leadership and
+            communication skills into meaningful community impact. I'm actively seeking roles in <strong>Data Analytics,
+              Business Intelligence</strong>, or <strong>Software Development</strong>.
+          </p>
+          <div class="about-info-grid">
+            <div class="info-item">
+              <span class="info-label">📍 Location</span>
+              <span class="info-value">Ongole, Andhra Pradesh, India</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">🎓 Degree</span>
+              <span class="info-value">B.Tech – EEE (2022–2026)</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📧 Email</span>
+              <span class="info-value"><a href="mailto:anuhyareddygodi@gmail.com">anuhyareddygodi@gmail.com</a></span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">📱 Phone</span>
+              <span class="info-value">9705400540</span>
+            </div>
+          </div>
+          <a href="mailto:anuhyareddygodi@gmail.com" class="btn btn-primary" style="margin-top:1.5rem;">Download
+            Resume</a>
+        </div>
+
+        <div class="about-cards reveal-right">
+          <div class="about-card glass-card">
+            <div class="card-icon">🎯</div>
+            <h3>Mission Driven</h3>
+            <p>Delivering meaningful contributions through data-backed decisions and collaborative problem-solving.</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">💡</div>
+            <h3>Continuous Learner</h3>
+            <p>From Deloitte job simulations to 42 Learn bootcamps — always upskilling and adapting.</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">🤝</div>
+            <h3>Team Collaborator</h3>
+            <p>Led club initiatives and cross-functional projects; excel at turning ideas into results, together.</p>
+          </div>
+          <div class="about-card glass-card">
+            <div class="card-icon">🚀</div>
+            <h3>Versatile Builder</h3>
+            <p>Fluent in both data pipelines and web development, bridging the gap between analytics and product.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ SKILLS ════════════════ -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Skills</span>
+        <h2 class="section-title">What I Work With</h2>
+      </div>
+
+      <div class="skills-layout">
+        <!-- Skill bars -->
+        <div class="skill-bars reveal-left">
+          <div class="skill-bar-item" data-skill="Python" data-pct="88">
+            <div class="skill-bar-header"><span>Python</span><span class="skill-pct">88%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="SQL" data-pct="82">
+            <div class="skill-bar-header"><span>SQL (PostgreSQL)</span><span class="skill-pct">82%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Power BI" data-pct="80">
+            <div class="skill-bar-header"><span>Power BI</span><span class="skill-pct">80%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Tableau" data-pct="75">
+            <div class="skill-bar-header"><span>Tableau</span><span class="skill-pct">75%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="Excel" data-pct="85">
+            <div class="skill-bar-header"><span>Excel (Advanced)</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+          <div class="skill-bar-item" data-skill="HTML5/CSS3" data-pct="78">
+            <div class="skill-bar-header"><span>HTML5 / CSS3</span><span class="skill-pct">78%</span></div>
+            <div class="skill-track">
+              <div class="skill-fill" style="width:0%"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill categories -->
+        <div class="skill-categories reveal-right">
+          <div class="skill-category glass-card">
+            <h3>📊 Data & Analytics</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">Python (Pandas)</span>
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">SQLAlchemy</span>
+              <span class="skill-tag">Psycopg2</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card">
+            <h3>📈 Visualization</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Excel</span>
+              <span class="skill-tag">pgAdmin</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card">
+            <h3>🌐 Web & Dev</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">Java (Basics)</span>
+            </div>
+          </div>
+          <div class="skill-category glass-card">
+            <h3>🧠 Concepts</h3>
+            <div class="tag-cloud">
+              <span class="skill-tag">OOP</span>
+              <span class="skill-tag">DBMS</span>
+              <span class="skill-tag">OSI Model</span>
+              <span class="skill-tag">Problem-Solving</span>
+              <span class="skill-tag">Team Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ EDUCATION ════════════════ -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Education</span>
+        <h2 class="section-title">Academic Journey</h2>
+      </div>
+
+      <div class="timeline" id="educationTimeline">
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot dot-primary"></div>
+          <div class="timeline-content glass-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Bachelor of Technology – Electrical &amp; Electronics</h3>
+                <p class="tl-subtitle">Pace Institute of Technology and Sciences</p>
+                <p class="tl-location">📍 Ongole, Andhra Pradesh</p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date">2022 – 2026</span>
+                <span class="tl-badge badge-primary">CGPA: 8.26</span>
+              </div>
+            </div>
+            <p class="tl-desc">Pursuing a four-year degree with strong focus on analytical reasoning, data systems, and
+              practical computing. Active participant in technical events and leadership programs.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot dot-secondary"></div>
+          <div class="timeline-content glass-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Intermediate (MPC)</h3>
+                <p class="tl-subtitle">Sri Pratibha Junior College</p>
+                <p class="tl-location">📍 Ongole, Andhra Pradesh</p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date">2020 – 2022</span>
+                <span class="tl-badge badge-secondary">85%</span>
+              </div>
+            </div>
+            <p class="tl-desc">Completed Maths-Physics-Chemistry stream with distinction, building strong quantitative
+              and scientific foundations.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up">
+          <div class="timeline-dot dot-accent"></div>
+          <div class="timeline-content glass-card">
+            <div class="tl-header">
+              <div>
+                <h3 class="tl-title">Secondary School (SSC)</h3>
+                <p class="tl-subtitle">Alpha High School</p>
+                <p class="tl-location">📍 Kanigiri, Andhra Pradesh</p>
+              </div>
+              <div class="tl-meta">
+                <span class="tl-date">2019 – 2020</span>
+                <span class="tl-badge badge-accent">99.33%</span>
+              </div>
+            </div>
+            <p class="tl-desc">School topper with a near-perfect score of 99.33%, demonstrating exceptional dedication
+              and academic excellence from an early stage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ EXPERIENCE ════════════════ -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04 / Experience</span>
+        <h2 class="section-title">Internships &amp; Activities</h2>
+      </div>
+
+      <div class="exp-grid">
+        <!-- Internship 1 -->
+        <div class="exp-card glass-card reveal-up">
+          <div class="exp-header">
+            <div class="exp-icon">💻</div>
+            <div>
+              <h3 class="exp-title">Java Full Stack Developer Intern</h3>
+              <p class="exp-company">Codetantra</p>
+            </div>
+            <span class="exp-date">May – June 2025</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Learned front-end &amp; back-end development using HTML, CSS, JavaScript and Java.</li>
+            <li>Gained hands-on experience in Java programming fundamentals and OOP concepts.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="skill-tag sm">Java</span>
+            <span class="skill-tag sm">HTML/CSS</span>
+            <span class="skill-tag sm">JavaScript</span>
+            <span class="skill-tag sm">OOP</span>
+          </div>
+        </div>
+
+        <!-- Internship 2 -->
+        <div class="exp-card glass-card reveal-up">
+          <div class="exp-header">
+            <div class="exp-icon">🐍</div>
+            <div>
+              <h3 class="exp-title">Python Programming Intern</h3>
+              <p class="exp-company">42 Learn</p>
+            </div>
+            <span class="exp-date">May – June 2024</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Built a solid foundation in Python programming with practical projects.</li>
+            <li>Focused on problem-solving, data structures, and algorithmic thinking.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="skill-tag sm">Python</span>
+            <span class="skill-tag sm">Algorithms</span>
+            <span class="skill-tag sm">Data Structures</span>
+          </div>
+        </div>
+
+        <!-- Activity 1 -->
+        <div class="exp-card glass-card reveal-up">
+          <div class="exp-header">
+            <div class="exp-icon">📊</div>
+            <div>
+              <h3 class="exp-title">Data Analytics Virtual Experience</h3>
+              <p class="exp-company">Deloitte (Forage Platform)</p>
+            </div>
+            <span class="exp-date">2024</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Completed real-world data analytics job simulation with business case scenarios.</li>
+            <li>Designed an interactive Tableau dashboard to visualize key business metrics and performance trends.</li>
+            <li>Performed data transformation in Excel using calculated columns.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="skill-tag sm">Tableau</span>
+            <span class="skill-tag sm">Excel</span>
+            <span class="skill-tag sm">Data Analytics</span>
+          </div>
+        </div>
+
+        <!-- Activity 2 -->
+        <div class="exp-card glass-card reveal-up">
+          <div class="exp-header">
+            <div class="exp-icon">🌍</div>
+            <div>
+              <h3 class="exp-title">Coordinator – Lingua Franca Club</h3>
+              <p class="exp-company">English Conversation &amp; Presentation Club</p>
+            </div>
+            <span class="exp-date">Ongoing</span>
+          </div>
+          <ul class="exp-bullets">
+            <li>Coordinated club meetings, workshops &amp; competitions to enhance students' communication skills.</li>
+            <li>Collaborated with faculty mentors to plan and execute language-learning initiatives.</li>
+          </ul>
+          <div class="exp-tags">
+            <span class="skill-tag sm">Leadership</span>
+            <span class="skill-tag sm">Communication</span>
+            <span class="skill-tag sm">Event Planning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ PROJECTS ════════════════ -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05 / Projects</span>
+        <h2 class="section-title">Featured Work</h2>
+      </div>
+
+      <div class="projects-grid">
+        <div class="project-card glass-card featured reveal-up">
+          <div class="project-glow"></div>
+          <div class="project-header">
+            <div class="project-icon-wrap">📦</div>
+            <span class="project-badge">Featured Project</span>
+          </div>
+          <h3 class="project-title">End-to-End Customer Shopping Behavior Analysis</h3>
+          <p class="project-desc">
+            Analyzed <strong>3,900+ transactions</strong> across multiple product categories using Python &amp; SQL to
+            uncover spending patterns, customer segments, product preferences, and subscription behavior — enabling
+            strategic business decisions.
+          </p>
+
+          <div class="project-highlights">
+            <div class="highlight-item">
+              <span class="highlight-num">3,900+</span>
+              <span class="highlight-label">Transactions Analyzed</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">5+</span>
+              <span class="highlight-label">KPI Dashboards</span>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-num">100%</span>
+              <span class="highlight-label">End-to-End Pipeline</span>
+            </div>
+          </div>
+
+          <div class="project-stack">
+            <h4>Tech Stack</h4>
+            <div class="tag-cloud">
+              <span class="skill-tag">Python (Pandas)</span>
+              <span class="skill-tag">SQL (PostgreSQL)</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Jupyter Notebook</span>
+              <span class="skill-tag">SQLAlchemy</span>
+              <span class="skill-tag">Psycopg2</span>
+              <span class="skill-tag">pgAdmin</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ CERTIFICATIONS ════════════════ -->
+  <section id="certifications" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06 / Certifications</span>
+        <h2 class="section-title">Credentials &amp; Badges</h2>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card glass-card reveal-up">
+          <div class="cert-ribbon"></div>
+          <div class="cert-icon">🏅</div>
+          <h3 class="cert-title">Python Programming with Data Engineer</h3>
+          <p class="cert-issuer">42 Learn</p>
+          <p class="cert-desc">Comprehensive certification covering Python fundamentals, data engineering concepts, and
+            real-world project implementation.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Python</span>
+            <span class="cert-tag">Data Engineering</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up">
+          <div class="cert-ribbon ribbon-green"></div>
+          <div class="cert-icon">📊</div>
+          <h3 class="cert-title">Data Analysis Job Simulation</h3>
+          <p class="cert-issuer">Deloitte (Forage Platform)</p>
+          <p class="cert-desc">Simulated real-world Deloitte data analyst workflow including dashboard creation, data
+            transformation, and business reporting.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">Tableau</span>
+            <span class="cert-tag">Excel</span>
+            <span class="cert-tag">Analytics</span>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card reveal-up">
+          <div class="cert-ribbon ribbon-blue"></div>
+          <div class="cert-icon">🧠</div>
+          <h3 class="cert-title">Data Structures &amp; Algorithms (Basic)</h3>
+          <p class="cert-issuer">Infosys Springboard</p>
+          <p class="cert-desc">Foundation-level certification covering fundamental DSA concepts, algorithmic thinking,
+            and computational problem-solving techniques.</p>
+          <div class="cert-footer">
+            <span class="cert-tag">DSA</span>
+            <span class="cert-tag">Problem Solving</span>
+            <span class="cert-tag">Algorithms</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ CONTACT ════════════════ -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">07 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-sub">I'm currently open to internship and full-time opportunities. Let's build something great
+          together!</p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-info reveal-left">
+          <div class="contact-card glass-card">
+            <h3>Get In Touch</h3>
+            <div class="contact-items">
+              <a href="mailto:anuhyareddygodi@gmail.com" class="contact-item" id="emailLink">
+                <div class="contact-item-icon">✉️</div>
+                <div>
+                  <span class="contact-item-label">Email</span>
+                  <span class="contact-item-value">anuhyareddygodi@gmail.com</span>
+                </div>
+              </a>
+              <div class="contact-item" id="phoneItem">
+                <div class="contact-item-icon">📱</div>
+                <div>
+                  <span class="contact-item-label">Phone</span>
+                  <span class="contact-item-value">+91 9705400540</span>
+                </div>
+              </div>
+              <div class="contact-item" id="locationItem">
+                <div class="contact-item-icon">📍</div>
+                <div>
+                  <span class="contact-item-label">Location</span>
+                  <span class="contact-item-value">Ongole, Andhra Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="social-links">
+              <a href="https://www.linkedin.com/in/anuhya-reddy" target="_blank" rel="noopener noreferrer"
+                class="social-btn" id="linkedinBtn" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                LinkedIn
+              </a>
+              <a href="mailto:anuhyareddygodi@gmail.com" class="social-btn" id="gmailBtn" aria-label="Email">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z" />
+                </svg>
+                Gmail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal-right" id="contactForm">
+          <h3>Send a Message</h3>
+          <div class="form-group">
+            <label for="senderName">Your Name</label>
+            <input type="text" id="senderName" placeholder="John Doe" required />
+          </div>
+          <div class="form-group">
+            <label for="senderEmail">Your Email</label>
+            <input type="email" id="senderEmail" placeholder="john@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Job Opportunity / Collaboration" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Hi Anuhya, I'd love to discuss..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width" id="submitBtn">Send Message ✈️</button>
+          <p class="form-note" id="formStatus"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════ FOOTER ════════════════ -->
+  <footer id="footer">
+    <div class="footer-inner">
+      <p class="footer-name">Godi <span class="gradient-text">Anuhya Reddy</span></p>
+      <p class="footer-tagline">Turning data into stories &amp; ideas into products.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Godi Anuhya Reddy. Crafted with ❤️ &amp; code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
